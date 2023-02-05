@@ -8,10 +8,6 @@ import (
 	"github.com/slighter12/event-driven-go/connect"
 )
 
-type PubSubRegistry interface {
-	Subscribe(data []byte) func()
-}
-
 type PubSub struct {
 	Title     string
 	Msg       any
